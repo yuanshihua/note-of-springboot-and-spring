@@ -10,6 +10,26 @@ mvn -Pnexus spring-boot:run：运行springboot
 
 ## spring boot 读书笔记（有点乱）
 
+### 项目的包结构
+```
+com
++- example
++- myproject
++- Application.java
+|
++- domain
+| +- Customer.java
+| +- CustomerRepository.java
+|
++- service
+| +- CustomerService.java
+|
++- web
+  +- CustomerController.java
+
+
+```
+
 spring boot 只需要非常少的spring的配置就能运行，既可以以IDE的形式运行，也可以在命令行中运行。
 
 Spring Boot集成了Tomcat、Jetty等Servlet 3.0+的Web容器。
@@ -36,7 +56,7 @@ public void run(String... args) {
 
 ```
 
-@SpringBootApplication注解代替了 @ComponentScan和 @Configuration，@EnableAutoConfiguration注解，更加的简便。
+@SpringBootApplication注解代替了 @ComponentScan和 @Configuration，@EnableAutoConfiguration注解，更加的简便。@SpringBootApplication还提供了别名，可以自定义@EnableAutoConfiguration and @ComponentScan的属性
 
 ```
 @SpringBootApplication

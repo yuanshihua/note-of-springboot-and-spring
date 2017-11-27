@@ -36,7 +36,7 @@ public void run(String... args) {
 
 ```
 
-@SpringBootApplication注解代替了ComponentScan和configuration注解，更加的简便。
+@SpringBootApplication注解代替了 @ComponentScan和 @Configuration，@EnableAutoConfiguration注解，更加的简便。
 
 ```
 @SpringBootApplication

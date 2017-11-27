@@ -13,19 +13,19 @@ mvn -Pnexus spring-boot:run：运行springboot
 ### 项目的包结构
 ```
 com
-+- example
-+- myproject
-+- Application.java
-|
-+- domain
-| +- Customer.java
-| +- CustomerRepository.java
-|
-+- service
-| +- CustomerService.java
-|
-+- web
-  +- CustomerController.java
+  +- example
+    +- myproject
+      +- Application.java
+      |
+      +- domain
+      | +- Customer.java
+      | +- CustomerRepository.java
+      |
+      +- service
+      | +- CustomerService.java
+      |
+      +- web
+        +- CustomerController.java
 
 
 ```
